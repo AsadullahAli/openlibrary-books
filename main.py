@@ -53,7 +53,6 @@ def fetch_page(page):
 
 
 def fetch_books():
-    """Collect up to 50 unique books published after 2000."""
     books_by_key = {}
 
     for page in range(1, MAX_PAGES + 1):
@@ -98,7 +97,7 @@ def fetch_books():
 
 
 def save_books(books, filename=OUTPUT_FILE):
-    """Sort and save book records to a CSV file."""
+    
     fieldnames = [
         "title",
         "authors",
